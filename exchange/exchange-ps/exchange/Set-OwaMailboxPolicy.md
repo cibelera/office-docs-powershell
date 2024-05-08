@@ -31,13 +31,11 @@ Set-OwaMailboxPolicy [-Identity] <MailboxPolicyIdParameter>
  [-AllowedFileTypes <MultiValuedProperty>]
  [-AllowedMimeTypes <MultiValuedProperty>]
  [-AllowedOrganizationAccountDomains <String[]>]
- [-AllowOfflineOn <AllowOfflineOnEnum>]
  [-BizBarEnabled <Boolean>]
  [-BlockedFileTypes <MultiValuedProperty>]
  [-BlockedMimeTypes <MultiValuedProperty>]
  [-BookingsMailboxCreationEnabled <Boolean>]
  [-BookingsMailboxDomain <String>]
- [-BoxAttachmentsEnabled <Boolean>]
  [-CalendarEnabled <Boolean>]
  [-ChangePasswordEnabled <Boolean>]
  [-ChangeSettingsAccountEnabled <System.Boolean>]
@@ -47,13 +45,10 @@ Set-OwaMailboxPolicy [-Identity] <MailboxPolicyIdParameter>
  [-ContactsEnabled <Boolean>]
  [-DefaultClientLanguage <Int32>]
  [-DefaultTheme <String>]
- [-DelegateAccessEnabled <Boolean>]
  [-DirectFileAccessOnPrivateComputersEnabled <Boolean>]
  [-DirectFileAccessOnPublicComputersEnabled <Boolean>]
  [-DisableFacebook]
  [-DisplayPhotosEnabled <Boolean>]
- [-DomainController <Fqdn>]
- [-DropboxAttachmentsEnabled <Boolean>]
  [-EmptyStateEnabled <Boolean>]
  [-ExplicitLogonEnabled <Boolean>]
  [-ExternalImageProxyEnabled <Boolean>]
@@ -150,6 +145,16 @@ Set-OwaMailboxPolicy [-Identity] <MailboxPolicyIdParameter>
  [-WhatIf]
  [-WSSAccessOnPrivateComputersEnabled <Boolean>]
  [-WSSAccessOnPublicComputersEnabled <Boolean>]
+ [<CommonParameters>]
+```
+The following policies are only available for on-premises Exchange
+```
+Set-OwaMailboxPolicy [-Identity] <MailboxPolicyIdParameter>
+[-AllowOfflineOn <AllowOfflineOnEnum>]
+[-BoxAttachmentsEnabled <Boolean>]
+[-DelegateAccessEnabled <Boolean>]
+[-DomainController <Fqdn>]
+[-DropboxAttachmentsEnabled <Boolean>]
  [<CommonParameters>]
 ```
 
